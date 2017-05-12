@@ -12,4 +12,5 @@ func (self FuncDo) Do()  {
 func main() {
 	var t Tester=FuncDo(func() {println("hello,World!")})
 	t.Do()
+	
 }
