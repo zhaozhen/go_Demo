@@ -12,21 +12,20 @@ func main() {
 	test()
 
 }
-func  test()  {
-	m:=map[string]int{"a":1,}
-	if v,ok:=m["a"];ok{
-		println(v,ok)
+func test() {
+	m := map[string]int{"a": 1}
+	if v, ok := m["a"]; ok {
+		println(v, ok)
 	}
 	println(m["c"])
 
-	m["b"]=2
+	m["b"] = 2
 
-	delete(m,"c")
+	delete(m, "c")
 
 	println(len(m))
 
-	for k,v:=range m{
-		println(k,v)
+	for k, v := range m {
+		println(k, v)
 	}
 }
-

@@ -10,16 +10,16 @@ import "fmt"
 //	k,v:=test(1,2,"sum:%d")
 //	println(k,v)
 //}
-func test(s string,n ...int) string {
+func test(s string, n ...int) string {
 	var x int
-	for _,i:=range n{
-		x+=i
+	for _, i := range n {
+		x += i
 	}
-	return fmt.Sprintf(s,x)
+	return fmt.Sprintf(s, x)
 }
-func main()  {
+func main() {
 	//println(test("sum:%d",1,2,3,4))
-	s:=[]int{1,2,3,4}
-	println(test("sum:%d",s...))
+	s := []int{1, 2, 3, 4}
+	println(test("sum:%d", s...))
 
 }

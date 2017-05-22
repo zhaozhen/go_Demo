@@ -12,12 +12,12 @@ func main() {
 	//}
 	//println(n2)
 
-	f:=File{
-		name:"text.txt",
-		size:213,
+	f := File{
+		name: "text.txt",
+		size: 213,
 	}
-	f.attr.owner=1
-	f.attr.perm=075
+	f.attr.owner = 1
+	f.attr.perm = 075
 }
 
 type Node struct {
@@ -27,11 +27,11 @@ type Node struct {
 	next *Node
 }
 
-type File struct{
+type File struct {
 	name string
 	size int
-	attr struct{
-		perm int
+	attr struct {
+		perm  int
 		owner int
-	     }
+	}
 }

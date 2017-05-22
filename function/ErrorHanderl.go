@@ -9,10 +9,10 @@ func main() {
 
 //没有结构化异常，使用panic抛出错误，recover接受错误
 
-func test8()  {
+func test8() {
 
-	defer func(){
-		if err:=recover();err!=nil{
+	defer func() {
+		if err := recover(); err != nil {
 			println(err.(string))
 			println("0-----------")
 		}
@@ -20,8 +20,8 @@ func test8()  {
 
 	panic("panic error")
 }
-func test9()  {
-	defer func(){
+func test9() {
+	defer func() {
 		fmt.Println(recover())
 	}()
 
@@ -31,4 +31,5 @@ func test9()  {
 
 	panic("test panic")
 }
+
 //

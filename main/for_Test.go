@@ -1,9 +1,9 @@
 package main
 
 func main() {
-	x:="abc"
-	for i,n:=0,len(x);i<n ;i++  {
-		println(i,x[i])
+	x := "abc"
+	for i, n := 0, len(x); i < n; i++ {
+		println(i, x[i])
 	}
 	//n:=len(x)
 	//for n>0{
@@ -15,7 +15,7 @@ func main() {
 	//	println(x)
 	//}
 }
-func length(s string)int  {
+func length(s string) int {
 	println("call length-------------------")
 	return len(s)
 }

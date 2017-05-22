@@ -8,17 +8,17 @@ package main
 //	println(x)
 //}
 
-func test3()(int,int)  {
-	return 1,2
+func test3() (int, int) {
+	return 1, 2
 	//多个返回值可以直接作为其他函数调用实参
 }
-func add(x,y int) int {
-	return x+y
+func add(x, y int) int {
+	return x + y
 }
 func sum(n ...int) int {
 	var x int
-	for _,i:=range n{
-		x+=i
+	for _, i := range n {
+		x += i
 	}
 	return x
 }
